@@ -50,12 +50,26 @@ export default function Form({
       </View>
       <View style={styles.playPause}>
         {!timerHasStarted || isDone ? (
-          <TouchableOpacity onPress={handleStart} disabled={!minute}>
-            <Feather name="play" size={32} color="30374e" />
+          <TouchableOpacity
+            style={{ marginTop: 0 }}
+            onPress={handleStart}
+            disabled={!minute}
+          >
+            <Feather
+              name="play"
+              color="#bb2254"
+              size={55}
+              iconStyle={{ size: 60 }}
+            />
           </TouchableOpacity>
         ) : (
           <TouchableOpacity onPress={handlePause}>
-            <Feather name="pause" size={32} color="30374e" />
+            <Feather
+              name="pause"
+              size={55}
+              iconStyle={{ size: 60 }}
+              color="#bb2254"
+            />
           </TouchableOpacity>
         )}
       </View>
@@ -100,10 +114,12 @@ const styles = StyleSheet.create({
   playPause: {
     backgroundColor: "#fff",
     flex: 3,
+    flexDirection: "row",
     borderRadius: 3,
     height: 90,
     padding: 20,
-    textAlign: "center"
+    // textAlign: "center",
+    justifyContent: "center"
   },
   placeholder: {
     // flex: 3,

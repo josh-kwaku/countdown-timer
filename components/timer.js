@@ -50,7 +50,7 @@ const styles = StyleSheet.create({
   },
   danger: {
     fontSize: 50,
-    color: "red"
+    color: "#bb2254"
   },
   blink: {
     color: "#fff",

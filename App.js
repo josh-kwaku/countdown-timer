@@ -8,6 +8,8 @@ import {
   Platform
 } from "react-native";
 
+import { Audio } from "expo-av";
+
 import Form from "./components/form";
 import Timer from "./components/timer";
 import Speedup from "./components/speedup";
@@ -23,14 +25,26 @@ export default function App() {
   const [done, setDone] = useState(false);
 
   const detectTimeUp = (currentMinute, currentSecond) => {
-    if (currentMinute <= 0 && currentSecond <= 0) {
+    if (currentMinute <= 0 && currentSecond < 0) {
       setMessage("Time's Up!!!");
+      clearMessage();
     }
   };
 
+  const clearMessage = () => {
+    setTimeout(() => {
+      setMessage("");
+    }, 3000);
+  };
+
   const detectHalfway = (initialMinute, currentMinute, currentSecond) => {
-    if (Math.floor(initialMinute / 2) === currentMinute && currentSecond < 0) {
+    if (initialMinute <= 1) return;
+    if (
+      Math.floor(initialMinute / 2) === currentMinute &&
+      currentSecond == -1
+    ) {
       setMessage("Halfway There!!!");
+      clearMessage();
     }
   };
 
@@ -46,8 +60,33 @@ export default function App() {
     }
   };
 
+  // const detectTwoSecsLeft = (currentMinute, currentSeconds) => {
+  //   if (currentMinute == 0 && currentSeconds <= 2) {
+  //     playAlarm();
+  //   }
+  // };
+
   const pauseCountdown = () => {
     clearInterval(interval);
+  };
+
+  const playAlarm = async () => {
+    const soundObject = new Audio.Sound();
+    try {
+      const {
+        sound: soundObject,
+        status
+      } = await Audio.Sound.createAsync(
+        require("./assets/sounds/analog-watch-alarm.wav"),
+        { shouldPlay: true }
+      );
+      // await soundObject.loadAsync(
+      //   require("./assets/sounds/analog-watch-alarm.wav")
+      // );
+      // await soundObject.playAsync();
+    } catch {
+      console.log("Could not play music");
+    }
   };
 
   const beginCountdown = (minute, second, speedupValue) => {
@@ -84,6 +123,7 @@ export default function App() {
           // countdown has ended
           clearInterval(intervalId);
           setDone(true);
+          playAlarm();
         } else {
           minuteClone -= 1;
           setTimeout(() => {
