@@ -4,7 +4,7 @@ This is a simple countdown timer designed with React Native.
 
 ## Screenshot
 
-![alt text](https://github.com/Jake-parkers/countdown-timer/tree/master/assets/screenshots/screenshot_1.png "Timer App Screenshot")
+![Timer App](https://github.com/Jake-parkers/countdown-timer/tree/master/assets/screenshots/screenshot_1.png)
 
 ## Installation
 
