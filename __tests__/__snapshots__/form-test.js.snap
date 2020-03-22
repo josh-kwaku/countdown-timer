@@ -1,0 +1,97 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Form/> test renders correctly 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "flexDirection": "row",
+      "justifyContent": "center",
+      "padding": 30,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "backgroundColor": "#fff",
+        "borderRadius": 3,
+        "elevation": 5,
+        "flex": 3,
+        "flexDirection": "row",
+        "height": "auto",
+        "justifyContent": "center",
+        "padding": 10,
+      }
+    }
+  >
+    <TextInput
+      allowFontScaling={true}
+      onChangeText={[Function]}
+      placeholder="10"
+      placeholderTextColor="#30374e"
+      rejectResponderTermination={true}
+      style={
+        Object {
+          "backgroundColor": "#fff",
+          "borderColor": "#cacaca",
+          "borderRadius": 4,
+          "borderWidth": 1,
+          "color": "#000",
+          "fontSize": 20,
+          "fontWeight": "bold",
+          "height": 40,
+          "padding": 4,
+          "textAlign": "center",
+          "width": 60,
+        }
+      }
+      underlineColorAndroid="transparent"
+    />
+    <Text
+      style={
+        Object {
+          "color": "#30374e",
+          "fontSize": 16,
+          "marginLeft": 15,
+          "marginTop": 10,
+        }
+      }
+    >
+      (minutes)
+    </Text>
+  </View>
+  <View
+    style={
+      Object {
+        "backgroundColor": "#fff",
+        "borderRadius": 3,
+        "flex": 3,
+        "height": 90,
+        "padding": 20,
+        "textAlign": "center",
+      }
+    }
+  >
+    <View
+      accessible={true}
+      focusable={true}
+      isTVSelectable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "opacity": 1,
+        }
+      }
+    >
+      <Text />
+    </View>
+  </View>
+</View>
+`;

@@ -1,0 +1,145 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Timer/> blah blah 1`] = `
+<View
+  style={
+    Object {
+      "flexDirection": "row",
+      "justifyContent": "center",
+      "marginTop": 50,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "backgroundColor": "#fff",
+        "borderRadius": 7,
+        "height": "auto",
+        "paddingBottom": 15,
+        "paddingLeft": 10,
+        "paddingRight": 10,
+        "paddingTop": 15,
+      }
+    }
+  >
+    <Text
+      style={
+        Object {
+          "color": "#30374e",
+          "fontSize": 50,
+        }
+      }
+    >
+      09
+    </Text>
+  </View>
+  <Text
+    style={
+      Object {
+        "color": "#fff",
+        "fontSize": 50,
+        "marginTop": 15,
+      }
+    }
+  >
+     : 
+  </Text>
+  <View
+    style={
+      Object {
+        "backgroundColor": "#fff",
+        "borderRadius": 7,
+        "height": "auto",
+        "paddingBottom": 15,
+        "paddingLeft": 10,
+        "paddingRight": 10,
+        "paddingTop": 15,
+      }
+    }
+  >
+    <Text
+      style={
+        Object {
+          "color": "#30374e",
+          "fontSize": 50,
+        }
+      }
+    >
+      59
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`<Timer/> test renders correctly 1`] = `
+<View
+  style={
+    Object {
+      "flexDirection": "row",
+      "justifyContent": "center",
+      "marginTop": 50,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "backgroundColor": "#fff",
+        "borderRadius": 7,
+        "height": "auto",
+        "paddingBottom": 15,
+        "paddingLeft": 10,
+        "paddingRight": 10,
+        "paddingTop": 15,
+      }
+    }
+  >
+    <Text
+      style={
+        Object {
+          "color": "#30374e",
+          "fontSize": 50,
+        }
+      }
+    >
+      09
+    </Text>
+  </View>
+  <Text
+    style={
+      Object {
+        "color": "#fff",
+        "fontSize": 50,
+        "marginTop": 15,
+      }
+    }
+  >
+     : 
+  </Text>
+  <View
+    style={
+      Object {
+        "backgroundColor": "#fff",
+        "borderRadius": 7,
+        "height": "auto",
+        "paddingBottom": 15,
+        "paddingLeft": 10,
+        "paddingRight": 10,
+        "paddingTop": 15,
+      }
+    }
+  >
+    <Text
+      style={
+        Object {
+          "color": "#30374e",
+          "fontSize": 50,
+        }
+      }
+    >
+      59
+    </Text>
+  </View>
+</View>
+`;
