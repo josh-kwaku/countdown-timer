@@ -22,7 +22,7 @@ export default function Form({
   const [timerHasStarted, setTimerHasStarted] = useState(false);
 
   const initCountdown = value => {
-    setMinute(value);
+    setMinute(Math.floor(value));
   };
 
   const handleStart = () => {
@@ -44,6 +44,7 @@ export default function Form({
           style={styles.input}
           placeholder="10"
           placeholderTextColor="#30374e"
+          keyboardType="numeric"
           onChangeText={initCountdown}
         />
         <Text style={styles.placeholder}>(minutes)</Text>

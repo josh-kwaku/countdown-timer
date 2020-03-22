@@ -60,12 +60,6 @@ export default function App() {
     }
   };
 
-  // const detectTwoSecsLeft = (currentMinute, currentSeconds) => {
-  //   if (currentMinute == 0 && currentSeconds <= 2) {
-  //     playAlarm();
-  //   }
-  // };
-
   const pauseCountdown = () => {
     clearInterval(interval);
   };
@@ -80,10 +74,6 @@ export default function App() {
         require("./assets/sounds/analog-watch-alarm.wav"),
         { shouldPlay: true }
       );
-      // await soundObject.loadAsync(
-      //   require("./assets/sounds/analog-watch-alarm.wav")
-      // );
-      // await soundObject.playAsync();
     } catch {
       console.log("Could not play music");
     }
