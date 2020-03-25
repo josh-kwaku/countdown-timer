@@ -65,17 +65,14 @@ export default function App() {
   };
 
   const playAlarm = async () => {
-    const soundObject = new Audio.Sound();
+    const soundObject = new Audio.Sound;
     try {
-      const {
-        sound: soundObject,
-        status
-      } = await Audio.Sound.createAsync(
+      await soundObject.createAsync(
         require("./assets/sounds/analog-watch-alarm.wav"),
         { shouldPlay: true }
       );
     } catch {
-      console.log("Could not play music");
+      console.error("Could not play music");
     }
   };
 
